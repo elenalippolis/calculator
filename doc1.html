@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+<body>
+
+  <h1>Javascript: the calculator 2.0 - Looking right</h1>
+
+  <div class="calculator">
+    <form>
+      <div class="row">
+
+      <input type="text"  id="screen" value="0">
+
+      <div class="a"><button id="a1" >C</button> <button id="a2" >x<sup>y</sup></button><button id="a3">/</button></div>
+      <div class="b"><button id="b1" onclick="doNum(7)">7</button><button id="b2" onclick="doNum(8)">8</button><button id="b3" onclick="doNum(9)">9</button><button id="b4">*</button></div>
+      <div class="c"><button id="c1" onclick="doNum(4)">4</button><button id="c2" onclick="doNum(5)">5</button><button id="c3" onclick="doNum(6)">6</button><button id="c4">-</button></div>
+      <div class="d"><button id="d1" onclick="doNum(1)">1</button><button id="d2" onclick="doNum(2)">2</button><button id="d3" onclick="doNum(3)">3</button><button id="d4">+</button></div>
+      <div class="e"><button id="e1" onclick="doNum(0)">0</button><button id="e2">+</button><button id="e3">=</button></div>
+    </form>
+  </div>
+  <script>
+  function doNum(n){
+
+    	document.getElementById("screen").value=n;
+
+  }
+</script>
+
+</body>
+</html>
