@@ -1,5 +1,5 @@
-function doNum(n){
+function doNum(){
 
-  	document.getElementById("screen").value="n";
+  	document.getElementById("screen").value="3";
 
 }
